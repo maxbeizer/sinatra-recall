@@ -7,7 +7,7 @@ class Note
   include DataMapper::Resource
   property :id, Serial
   property :content, Text, :required => true
-  property :classomplete, Boolean, :required => true, :default => 0
+  property :complete, Boolean, :required => true, :default => 0
   property :created_at, DateTime
   property :updated_at, DateTime
 end
